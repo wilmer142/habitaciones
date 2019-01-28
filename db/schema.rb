@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190128015712) do
+ActiveRecord::Schema.define(version: 20190128032156) do
 
   create_table "rooms", force: :cascade do |t|
     t.string   "title"
@@ -18,8 +18,9 @@ ActiveRecord::Schema.define(version: 20190128015712) do
     t.integer  "beds"
     t.integer  "guests"
     t.string   "image_url"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+    t.decimal  "price_per_night"
   end
 
 end
